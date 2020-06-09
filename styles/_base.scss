@@ -1,0 +1,22 @@
+$title-color: #003049;
+$primary-color: #FCBF49;
+$background-color: #EAE2B7;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: $background-color;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}

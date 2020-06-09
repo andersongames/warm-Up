@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #EAE2B7;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+#page-home {
+  height: 100vh;
+  background: url("../assets/radar-screen.svg") no-repeat;
+  background-position-x: 60vw;
+  background-position-y: 30vh;
+  background-size: 480px 480px;
+}
+
+#page-home div.content {
+  width: 90%;
+  height: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#page-home div.content header {
+  padding-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#page-home div.content header div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-home div.content header div.logo img {
+  width: 48px;
+  height: 48px;
+}
+
+#page-home div.content header div.logo span {
+  padding-left: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #003049;
+}
+
+#page-home div.content header div.log-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-home div.content header div.log-in span {
+  background: url("../assets/log-in.svg");
+  width: 20px;
+  height: 20px;
+}
+
+#page-home div.content header div.log-in a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #003049;
+  padding-left: 10px;
+}
+
+#page-home div.content main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#page-home div.content main div.banner {
+  background: url("../images/donate-cut.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80%;
+  border-radius: 100px;
+}
+/*# sourceMappingURL=main.css.map */
