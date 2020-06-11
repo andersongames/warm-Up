@@ -109,102 +109,33 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#page-home div.content main div.banner {
-  margin: 0 auto;
+#page-home div.content main #slider {
   width: 90%;
-  height: 600px;
-}
-
-#page-home div.content main div.banner div.box {
-  overflow: hidden;
+  max-width: 1000px;
+  height: 60vh;
+  max-height: 600px;
   position: relative;
-  border-radius: 50px;
-  width: 100%;
-  height: 100%;
 }
 
-#page-home div.content main div.banner div.box img {
+#page-home div.content main #slider img {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
+  border-radius: 30px;
 }
 
-#page-home div.content main div.banner div.box img.img1 {
-  -webkit-animation-name: transparency1;
-          animation-name: transparency1;
-  -webkit-animation-duration: 9s;
-          animation-duration: 9s;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  z-index: 2;
-}
-
-@-webkit-keyframes transparency1 {
-  0% {
-    opacity: 1;
-  }
-  33% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes transparency1 {
-  0% {
-    opacity: 1;
-  }
-  33% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-#page-home div.content main div.banner div.box img.img2 {
-  -webkit-animation-name: transparency2;
-          animation-name: transparency2;
-  -webkit-animation-duration: 9s;
-          animation-duration: 9s;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  z-index: 1;
-}
-
-@-webkit-keyframes transparency2 {
-  0% {
-    opacity: 1;
-  }
-  33% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes transparency2 {
-  0% {
-    opacity: 1;
-  }
-  33% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-#page-home div.content main div.banner div.box img.img3 {
-  z-index: 0;
+#page-home div.content main #slider img.selected {
+  opacity: 1;
 }
 
 #page-home div.content main div.button {
