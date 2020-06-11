@@ -23,8 +23,8 @@
                 align-items: center;
                 
                 img {
-                    width: 48px;
-                    height: 48px;
+                    width: 64px;
+                    height: 64px;
                 }
 
                 span {
@@ -62,23 +62,52 @@
             justify-content: center;
 
             div.banner {
+                margin: 48px auto;
                 background: url('../images/donate-cut.jpg') no-repeat;
                 background-size: cover;
                 background-position: center;
                 width: 100%;
-                height: 80%;
-                border-radius: 100px;
+                height: 60%;
+                border-radius: 50px;
             }
 
             div.button {
+                margin: 48px auto;
                 
                 a {
+                    display: flex;
+                    align-items: center;
+                    width: 360px;
+                    height: 80px;
+                    background-color: #D62828;
+                    border-radius: 16px;
+
                     span {
-                        
+                        width: 80px;
+                        height: 80px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-top-left-radius: 16px;
+                        border-bottom-left-radius: 16px;
+                        background-color: rgba(0, 0, 0, 0.08);
+
+                        &::after {
+                            content: "";
+                            background: url(../assets/search.svg) no-repeat;
+                            width: 24px;
+                            height: 24px;
+                        }
                     }
 
                     strong {
+                        color: $background-color;
+                        font-size: 18px;
+                        margin: 0 auto;
+                    }
 
+                    &:hover {
+                        background-color: rgb(192, 37, 37);  
                     }
                 }
             }
