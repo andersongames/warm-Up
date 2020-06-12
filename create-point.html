@@ -18,37 +18,35 @@
 </head>
 <body>
     <div id="create-point">
-        <div class="conten">
-            <header>
-                <div class="logo">
-                    <img src="assets/scarf.svg" alt="Logo">
-                    <span>
-                        Warm Up
-                    </span>
-                </div><!--logo-->
+        <header>
+            <div class="logo">
+                <img src="assets/scarf.svg" alt="Logo">
+                <span>
+                    Warm Up
+                </span>
+            </div><!--logo-->
 
-                <div class="log-in">
-                    <span></span><!--log-in-asset-->
-                    <a href="#">
-                        Cadastre um ponto de arrecadação
-                    </a>
-                </div><!--log-in-->
-            </header>
+            <div class="log-in">
+                <span></span><!--log-in-asset-->
+                <a href="#">
+                    Cadastre um ponto de arrecadação
+                </a>
+            </div><!--log-in-->
+        </header>
 
-            <form action="">
-                <h1>Cadatre um ponto de coleta</h1>
+        <form action="">
+            <h1>Cadatre um ponto de coleta</h1>
 
-                <fieldset>
-                    <legend>Dados da entidade</legend>
-                </fieldset>
-
+            <fieldset>
+                <legend>Dados da entidade</legend>
+            
                 <div class="field">
                     <label for="name">Nome da entidade</label>
                     <input type="text" name="name" required>
                 </div><!--field-->
             
                 <div class="field">
-                    <label for="image">Nome da entidade</label>
+                    <label for="image">Imgem da entidade</label>
                     <input type="url" name="image" placeholder="http://" required>
                 </div><!--field-->
 
@@ -79,16 +77,40 @@
                 <div class="field-group">
                     <div class="field">
                         <label for="state">Estado</label>
-                        <input type="text" name="state" required>
+                        <select name="uf" required>
+                            <option value="">Selecione o Estado</option>
+                        </select>
                     </div><!--field-->
             
                     <div class="field">
                         <label for="city">Cidade</label>
-                        <input type="text" name="city" required>
+                        <select name="city" dissable required>
+                            <option value="">Selecione a Cidade</option>
+                        </select>
                     </div><!--field-->
                 </div><!--field-group-->
-            </form>
-        </div><!--content-->
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h2>Itens de coleta</h2>
+                    <span>Seleceione um ou mais itens abaixo</span>
+                </legend>
+
+                <div class="items-grid">
+                    <li>
+                        <img src="" alt="Roupas">
+                        <span>Roupas</span>
+                    </li>
+                    
+
+                    <input type="hidden" name="items">
+                </div><!--items-grid-->
+
+            </fieldset>
+
+            <input type="submit" value="Cadastrar">
+        </form>
     </div><!--create-point-->
 
 <!--icons-author

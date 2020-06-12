@@ -17,11 +17,16 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Ubuntu', sans-serif;
+    color: $title-color;
+}
+
 a {
     text-decoration: none;
 }
 
-div.content {
+@mixin content() {
     width: 90%;
     height: 100%;
     max-width: 1100px;

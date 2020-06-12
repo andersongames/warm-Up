@@ -1,47 +1,5 @@
 #page-home {
-    height: 100vh;
-
-    header {
-        padding-top: 48px;
-        display: flex;
-        justify-content: space-between;
-
-        div.logo {
-            display: flex;
-            align-items: center;
-            
-            img {
-                width: 64px;
-                height: 64px;
-            }
-
-            span {
-                padding-left: 10px;
-                font-family: 'Roboto Condensed', sans-serif;
-                font-size: 36px;
-                font-weight: bold;
-                color: $title-color;
-            }
-        }
-
-        div.log-in {
-            display: flex;
-            align-items: center;
-
-            span {
-                background: url('../assets/log-in.svg');
-                width: 20px;
-                height: 20px;
-            }
-
-            a {
-                font-size: 18px;
-                font-weight: bold;
-                color: $title-color;
-                padding-left: 10px;
-            }
-        }
-    }
+    @include content();
 
     main {
         flex: 1;
