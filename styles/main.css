@@ -234,6 +234,7 @@ header div.log-in a {
 }
 
 #create-point form fieldset legend h2 {
+  margin-top: 16px;
   font-size: 22px;
 }
 
