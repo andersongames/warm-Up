@@ -1,4 +1,4 @@
-let time  = 3000
+let time  = 3500
     currentImageIndex = 0
     images = document.querySelectorAll("#slider img"),
     max = images.length

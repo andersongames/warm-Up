@@ -18,15 +18,7 @@ a {
   text-decoration: none;
 }
 
-#page-home {
-  height: 100vh;
-  background: url("../assets/radar-screen.svg") no-repeat;
-  background-position-x: 60vw;
-  background-position-y: 30vh;
-  background-size: 480px 480px;
-}
-
-#page-home div.content {
+div.content {
   width: 90%;
   height: 100%;
   max-width: 1100px;
@@ -40,7 +32,11 @@ a {
           flex-direction: column;
 }
 
-#page-home div.content header {
+#page-home {
+  height: 100vh;
+}
+
+#page-home header {
   padding-top: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,7 +46,7 @@ a {
           justify-content: space-between;
 }
 
-#page-home div.content header div.logo {
+#page-home header div.logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,12 +55,12 @@ a {
           align-items: center;
 }
 
-#page-home div.content header div.logo img {
+#page-home header div.logo img {
   width: 64px;
   height: 64px;
 }
 
-#page-home div.content header div.logo span {
+#page-home header div.logo span {
   padding-left: 10px;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 36px;
@@ -72,7 +68,7 @@ a {
   color: #003049;
 }
 
-#page-home div.content header div.log-in {
+#page-home header div.log-in {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,20 +77,20 @@ a {
           align-items: center;
 }
 
-#page-home div.content header div.log-in span {
+#page-home header div.log-in span {
   background: url("../assets/log-in.svg");
   width: 20px;
   height: 20px;
 }
 
-#page-home div.content header div.log-in a {
+#page-home header div.log-in a {
   font-size: 18px;
   font-weight: bold;
   color: #003049;
   padding-left: 10px;
 }
 
-#page-home div.content main {
+#page-home main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -114,7 +110,7 @@ a {
           align-items: center;
 }
 
-#page-home div.content main #slider {
+#page-home main #slider {
   width: 90%;
   max-width: 1000px;
   height: 60vh;
@@ -122,7 +118,7 @@ a {
   position: relative;
 }
 
-#page-home div.content main #slider img {
+#page-home main #slider img {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -134,15 +130,15 @@ a {
   border-radius: 30px;
 }
 
-#page-home div.content main #slider img.selected {
+#page-home main #slider img.selected {
   opacity: 1;
 }
 
-#page-home div.content main div.button {
+#page-home main div.button {
   margin: 48px auto;
 }
 
-#page-home div.content main div.button a {
+#page-home main div.button a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +151,7 @@ a {
   border-radius: 16px;
 }
 
-#page-home div.content main div.button a span {
+#page-home main div.button a span {
   width: 80px;
   height: 80px;
   display: -webkit-box;
@@ -172,20 +168,36 @@ a {
   background-color: rgba(0, 0, 0, 0.08);
 }
 
-#page-home div.content main div.button a span::after {
+#page-home main div.button a span::after {
   content: "";
   background: url(../assets/search.svg) no-repeat;
   width: 24px;
   height: 24px;
 }
 
-#page-home div.content main div.button a strong {
+#page-home main div.button a strong {
   color: #EAE2B7;
   font-size: 18px;
   margin: 0 auto;
 }
 
-#page-home div.content main div.button a:hover {
+#page-home main div.button a:hover {
   background-color: #c02525;
+}
+
+#create-point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */

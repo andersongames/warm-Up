@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Anderson Games">
+    <meta name="description" content="Encontre desenvolvedores perto de você">
+    <meta name="keywords" content="desenvolvedores, programadores, tecnologia">
+
+    <link rel="icon" type="image/svg" href="assets/scarf.svg"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <title>Cadastre um ponto de coleta</title>
+</head>
+<body>
+    <div id="create-point">
+        <div class="conten">
+            <header>
+                <div class="logo">
+                    <img src="assets/scarf.svg" alt="Logo">
+                    <span>
+                        Warm Up
+                    </span>
+                </div><!--logo-->
+
+                <div class="log-in">
+                    <span></span><!--log-in-asset-->
+                    <a href="#">
+                        Cadastre um ponto de arrecadação
+                    </a>
+                </div><!--log-in-->
+            </header>
+
+            <form action="">
+                <h1>Cadatre um ponto de coleta</h1>
+
+                <fieldset>
+                    <legend>Dados da entidade</legend>
+                </fieldset>
+
+                <div class="field">
+                    <label for="name">Nome da entidade</label>
+                    <input type="text" name="name" required>
+                </div><!--field-->
+            
+                <div class="field">
+                    <label for="image">Nome da entidade</label>
+                    <input type="url" name="image" placeholder="http://" required>
+                </div><!--field-->
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="phone">Telefone</label>
+                        <input type="text" name="phone" required>
+                    </div><!--field-->
+            
+                    <div class="field">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" required>
+                    </div><!--field-->
+                </div><!--field-group-->
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="address">Endereço</label>
+                        <input type="text" name="address" required>
+                    </div><!--field-->
+            
+                    <div class="field">
+                        <label for="adress2">Número/Complemento</label>
+                        <input type="text" name="adress2" required>
+                    </div><!--field-->
+                </div><!--field-group-->
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="state">Estado</label>
+                        <input type="text" name="state" required>
+                    </div><!--field-->
+            
+                    <div class="field">
+                        <label for="city">Cidade</label>
+                        <input type="text" name="city" required>
+                    </div><!--field-->
+                </div><!--field-group-->
+            </form>
+        </div><!--content-->
+    </div><!--create-point-->
+
+<!--icons-author
+
+-->
+
+    <script src="scripts/create-point.js"></script>
+</body>
+</html>
