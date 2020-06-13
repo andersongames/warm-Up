@@ -9,7 +9,7 @@ span.backgroung-cover {
     z-index: -1;
 }
 
-main {
+main.search-results {
     max-width: 1000px;
     margin: 0 auto;
     margin-top: 48px;
@@ -57,7 +57,6 @@ main {
             }
 
             p {
-                margin-top: 12px;
                 text-align: left;
                 padding: 16px;
             }

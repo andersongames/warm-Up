@@ -94,7 +94,16 @@ header div.log-in a {
           flex-direction: column;
 }
 
-#page-home main {
+#page-home div.text {
+  margin-bottom: 24px;
+}
+
+#page-home div.text h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#page-home main.home {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -114,7 +123,7 @@ header div.log-in a {
           align-items: center;
 }
 
-#page-home main #slider {
+#page-home main.home #slider {
   width: 90%;
   max-width: 1000px;
   height: 60vh;
@@ -122,7 +131,7 @@ header div.log-in a {
   position: relative;
 }
 
-#page-home main #slider img {
+#page-home main.home #slider img {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -134,15 +143,15 @@ header div.log-in a {
   border-radius: 30px;
 }
 
-#page-home main #slider img.selected {
+#page-home main.home #slider img.selected {
   opacity: 1;
 }
 
-#page-home main div.button {
+#page-home main.home div.button {
   margin: 48px auto;
 }
 
-#page-home main div.button a {
+#page-home main.home div.button a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +164,7 @@ header div.log-in a {
   border-radius: 16px;
 }
 
-#page-home main div.button a span {
+#page-home main.home div.button a span {
   width: 80px;
   height: 80px;
   display: -webkit-box;
@@ -172,20 +181,20 @@ header div.log-in a {
   background-color: rgba(0, 0, 0, 0.08);
 }
 
-#page-home main div.button a span::after {
+#page-home main.home div.button a span::after {
   content: "";
   background: url(../assets/search.svg) no-repeat;
   width: 24px;
   height: 24px;
 }
 
-#page-home main div.button a strong {
+#page-home main.home div.button a strong {
   color: #EAE2B7;
   font-size: 18px;
   margin: 0 auto;
 }
 
-#page-home main div.button a:hover {
+#page-home main.home div.button a:hover {
   background-color: #c02525;
 }
 
@@ -366,7 +375,7 @@ span.backgroung-cover {
   z-index: -1;
 }
 
-main {
+main.search-results {
   max-width: 1000px;
   margin: 0 auto;
   margin-top: 48px;
@@ -383,12 +392,12 @@ main {
           align-items: center;
 }
 
-main h4 {
+main.search-results h4 {
   font-size: 18px;
   font-weight: normal;
 }
 
-main div.cards {
+main.search-results div.cards {
   margin-top: 48px;
   display: -ms-grid;
   display: grid;
@@ -398,13 +407,13 @@ main div.cards {
   padding: 0 1% 0 1%;
 }
 
-main div.cards div.card {
+main.search-results div.cards div.card {
   text-align: center;
   background-color: #EAE2B7;
   border-radius: 15px;
 }
 
-main div.cards div.card img {
+main.search-results div.cards div.card img {
   width: 100%;
   height: 150px;
   border-top-left-radius: 15px;
@@ -413,20 +422,19 @@ main div.cards div.card img {
      object-fit: cover;
 }
 
-main div.cards div.card h1 {
+main.search-results div.cards div.card h1 {
   margin-top: 4px;
   font-size: 24px;
   padding: 8px;
 }
 
-main div.cards div.card h3 {
+main.search-results div.cards div.card h3 {
   margin-top: 18px;
   color: #D62828;
   padding: 12px;
 }
 
-main div.cards div.card p {
-  margin-top: 12px;
+main.search-results div.cards div.card p {
   text-align: left;
   padding: 16px;
 }
