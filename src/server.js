@@ -11,6 +11,11 @@ nunjucks.configure("src/views", {
     noCache: true
 })
 
+/*TESTE COM ROTAS
+const routes = require("routes")
+server.use(routes)
+TESTE COM ROTAS*/
+
 //habilita o use do req.body
 server.use(express.urlencoded({ extended: true }))
 
@@ -19,6 +24,11 @@ server.use(express.urlencoded({ extended: true }))
     server.get("/", (req, res) => {
         return res.render("index.html")
     })
+
+    //create-point
+    
+
+    //search-results
 
 //liga o servidor
 server.listen(3000)

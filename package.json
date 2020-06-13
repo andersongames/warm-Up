@@ -1,16 +1,8 @@
 {
   "name": "warm-up",
   "version": "1.0.0",
-  "description": "Projeto Warm Up, encontre locais de coleta de doações",
+  "description": "Projeto Warm Up, encontre pontos de coleta de doações",
   "main": "src/server.js",
-  "dependencies": {
-    "express": "^4.17.1",
-    "nunjucks": "^3.2.1",
-    "sqlite3": "^4.2.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
-  },
   "scripts": {
     "start": "nodemon src/server.js"
   },
@@ -24,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/andersongames/warm-Up/issues"
   },
-  "homepage": "https://github.com/andersongames/warm-Up#readme"
+  "homepage": "https://github.com/andersongames/warm-Up#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
