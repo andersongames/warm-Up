@@ -26,9 +26,15 @@ server.use(express.urlencoded({ extended: true }))
     })
 
     //create-point
+    server.get("/create-point", (req, res) => {
+        return res.render("create-point.html")
+    })
     
 
     //search-results
+    server.get("/search-results", (req, res) => {
+        return res.render("search-results.html")
+    })
 
 //liga o servidor
 server.listen(3000)
