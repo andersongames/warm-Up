@@ -1,0 +1,68 @@
+//modal #home
+#modal {
+    background-color: #0e0a14ef;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms;
+
+    &.hide{
+        display: none;
+    }
+
+    div.content {
+        width: 480px;
+
+        div.header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 48px;
+
+            h1 {
+                color: white;
+                font-size: 38px;
+                line-height: 42px;
+            }
+
+            a {
+                background-image: url(../assets/x.svg);
+                width: 20px;
+                height: 20px;
+                font-size: 0.01px;
+                display: flex;
+            }
+        }
+    }
+
+    form div.field{
+        display: flex;
+
+        input {
+            flex: 1;
+            background-color: $background-color;
+            border-radius: 8px 0 0 8px;
+            border: 0;
+            font-size: 16px;
+            color: #6c6c80;
+            padding: 16px 24px;
+        }
+
+        button {
+            width: 72px;
+            height: 72px;
+            background-color: $primary-color;
+            border: 0;
+            border-radius: 0 8px 8px 0;
+
+            &:hover {
+                background-color: #fdb21d;
+                cursor: pointer;
+            }
+        }
+    }
+}

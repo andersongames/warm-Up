@@ -198,6 +198,93 @@ header div.log-in a {
   background-color: #c02525;
 }
 
+#modal {
+  background-color: #0e0a14ef;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+#modal.hide {
+  display: none;
+}
+
+#modal div.content {
+  width: 480px;
+}
+
+#modal div.content div.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+#modal div.content div.header h1 {
+  color: white;
+  font-size: 38px;
+  line-height: 42px;
+}
+
+#modal div.content div.header a {
+  background-image: url(../assets/x.svg);
+  width: 20px;
+  height: 20px;
+  font-size: 0.01px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#modal form div.field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#modal form div.field input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #EAE2B7;
+  border-radius: 8px 0 0 8px;
+  border: 0;
+  font-size: 16px;
+  color: #6c6c80;
+  padding: 16px 24px;
+}
+
+#modal form div.field button {
+  width: 72px;
+  height: 72px;
+  background-color: #FCBF49;
+  border: 0;
+  border-radius: 0 8px 8px 0;
+}
+
+#modal form div.field button:hover {
+  background-color: #fdb21d;
+  cursor: pointer;
+}
+
 #create-point {
   width: 90%;
   height: 100%;

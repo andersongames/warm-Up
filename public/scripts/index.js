@@ -1,3 +1,4 @@
+//slider
 let time  = 3500 //define o intervalo da transição
     currentImageIndex = 0  //começa o index em 0
     images = document.querySelectorAll("#slider img"), //seleciona os elementos com as imagens
@@ -22,3 +23,17 @@ function start() { //função para chamar a nextImage() em determinado intervalo
 
 //ouvidor de eventos
 window.addEventListener("load", start) //evento load (carregar a página), executa a função start
+
+
+//hide class
+const searchButton = document.querySelector("#page-home main a")
+const modal = document.querySelector("#modal")
+const close = document.querySelector("#modal .header a")
+
+searchButton.addEventListener("click", () => {
+    modal.classList.remove("hide")
+})
+
+close.addEventListener("click", () => {
+    modal.classList.add("hide")
+})
