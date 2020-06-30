@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Anderson Games">
+    <meta name="description" content="Encontre desenvolvedores perto de você">
+    <meta name="keywords" content="desenvolvedores, programadores, tecnologia">
+
+    <link rel="icon" type="image/svg" href="assets/scarf.svg"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    {% block title %}
+        <title>WarmUp</title>
+    {% endblock title %}
+</head>
+    <body>
+        <div id="{{ pageId }}">
+
+        {% block content %}
+        {% endblock content %}
+
+        {% block modal %}
+        {% endblock modal %}
+
+        {% block scripts %}
+        {% endblock scripts %}
+    </body>
+</html>

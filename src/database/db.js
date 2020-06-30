@@ -8,7 +8,7 @@ const db = new sqlite3.Database("./src/database/database.db")
 module.exports = db
 
 //db operations
-db.serialize(() => {
+db.serialize(() => {/*
     //1. CREATE TABLE
     db.run(`
         CREATE TABLE IF NOT EXISTS places (
@@ -60,7 +60,7 @@ db.serialize(() => {
         console.log(this)
     }
 
-    db.run(query, values, afterInsertData)
+    db.run(query, values, afterInsertData)*/
 /*
     //3. SEARCH
     db.all(`SELECT name FROM places`, function(err, rows) {
