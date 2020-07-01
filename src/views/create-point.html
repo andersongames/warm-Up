@@ -6,23 +6,7 @@
 {% endblock title %}
 
 {% block content %}
-        <header>
-            <div class="logo">
-                <img src="assets/scarf.svg" alt="Logo">
-                <span>
-                    Warm Up
-                </span>
-            </div><!--logo-->
-
-            <div class="log-in">
-                <span></span><!--log-in-asset-->
-                <a href="/">
-                    Voltar para home
-                </a>
-            </div><!--log-in-->
-        </header>
-
-        <form action="/savepoint" method="POST">
+         <form action="/savepoint" method="POST">
             <h1>Cadatre um ponto de coleta</h1>
 
             <fieldset>
@@ -88,17 +72,17 @@
                 </legend>
 
                 <div class="items-grid">
-                    <li data-id="Roupas">
+                    <li data-id=" Roupas">
                         <img src="assets/clothes.svg" alt="Roupas">
                         <span>Roupas</span>
                     </li>
                     
-                    <li data-id="Brinquedos">
+                    <li data-id=" Brinquedos">
                         <img src="assets/heart.svg" alt="Brinquedos">
                         <span>Brinquedos</span>
                     </li>
 
-                    <li data-id="Alimentos">
+                    <li data-id=" Alimentos">
                         <img src="assets/kitchen.svg" alt="Alimentos">
                         <span>Alimentos</span>
                     </li>
@@ -116,7 +100,7 @@
 
 {% block modal %}
 {% if saved %}
-{% include "partials/sucess-modal.html"%}
+{% include "partials/success-modal.html"%}
 {% endif %}
 {% if error %}
 {% include "partials/error-modal.html"%}

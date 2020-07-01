@@ -285,6 +285,30 @@ header div.log-in a {
   cursor: pointer;
 }
 
+#modal.success div.content, #modal.error div.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#modal.success div.content img, #modal.error div.content img {
+  width: 64px;
+  height: 64px;
+}
+
+#modal.success div.content h1, #modal.error div.content h1 {
+  margin-top: 32px;
+  color: white;
+  font-size: 28px;
+}
+
 #create-point {
   width: 90%;
   height: 100%;

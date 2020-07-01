@@ -73,7 +73,7 @@ function handleSelectedItem(event) { //função que é executada quando um item 
     //se já estiver selecionado (return true), remover do array
     if(alreadySelected >=0) { //se já existem itens selecionados
         //tirar da seleção
-        const filteredItems = selectedItems.filter( item => { //pega cada item que vieram pela alreadySelected
+        const filteredItems = selectedItems.filter( item => { //pega cada item que vier pela alreadySelected
             const itemIsDifferent = item != itemId //compara  com os id das li (se forem iguais será false, se forem diferentes será true)
             return itemIsDifferent //retorna os itens que são diferentes
         })
