@@ -1,2 +1,23 @@
-# warmUp
- Projeto Warm Up
+# Projeto warmUp
+ 
+ Aplicação **warmUp**, desenvolvido com base na aplicação Ecoleta, para fixar o aprendizados da Next Level Week e explorar novas funcionalidades.
+ 
+ ## A Aplicação
+ 
+ O warmUp é de uma aplicação que possibilita cadastrar e localizar pontos de doações.
+ 
+:sparkling_heart::sparkling_heart::sparkling_heart:
+ 
+ ###Screenshot
+ ![Home](public/images/screenshot-warmUp-home.png)
+ 
+## :computer: Tecnologias
+- HTML
+- CSS
+- SASS
+- JavaScripyt
+- Node.js
+- SQL
+- SQLlite
+
+:rocket: :rocket: :rocket:
