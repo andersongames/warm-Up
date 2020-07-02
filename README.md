@@ -4,11 +4,11 @@
  
  ## A Aplicação
  
- O warmUp é de uma aplicação que possibilita cadastrar e localizar pontos de doações.
+ O warmUp é uma aplicação que possibilita cadastrar e localizar pontos de doações.
  
 :sparkling_heart::sparkling_heart::sparkling_heart:
  
- ###Screenshot
+## Screenshot
  ![Home](public/images/screenshot-warmUp-home.png)
  
 ## :computer: Tecnologias
