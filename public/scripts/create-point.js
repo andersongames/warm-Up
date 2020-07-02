@@ -1,4 +1,5 @@
 //popular select com os estados
+/*
 function populateUFs()  {
     const ufSelect = document.querySelector("select[name=uf]") //seleciona a select uf
 
@@ -36,7 +37,6 @@ function getCities(event) {
         for( const city of cities ) { //adiciona uma option para cada Cidade que retornou no json
             citySelect.innerHTML += `<option value="${city.nome}">${city.nome}</option>`
         }
-
         citySelect.disabled = false
     })
 }
@@ -44,7 +44,7 @@ function getCities(event) {
 document
     .querySelector("select[name=uf]") //seleciona a select com name=uf
     .addEventListener("change", getCities) //adiciona um ouvidor de eventos, quando mudar o valor da select, executa a função getCities (passada por referência)
-
+*/
 
 //itens de coleta
 const itemsToCollect = document.querySelectorAll(".items-grid li") //seleciona as li

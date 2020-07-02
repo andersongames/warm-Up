@@ -21,11 +21,10 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 48px;
 
             h1 {
                 color: white;
-                font-size: 38px;
+                font-size: 32px;
                 line-height: 42px;
             }
 
@@ -39,29 +38,64 @@
         }
     }
 
-    form div.field{
+    form div.search{
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
 
-        input {
-            flex: 1;
-            background-color: $background-color;
-            border-radius: 8px 0 0 8px;
-            border: 0;
-            font-size: 16px;
-            color: #6c6c80;
-            padding: 16px 24px;
+        div.field {
+            margin-top: 20px;
+            width: 90%;
+            
+            select {
+                width: 100%;
+                height: 48px;
+                border-radius: 8px;
+                border: 2px solid $primary-color;
+                background-color: $background-color;
+                color: $title-color;
+                font-size: 18px;
+            }
         }
 
         button {
-            width: 72px;
-            height: 72px;
+            margin-top: 26px;
+            width: 380px;
+            height: 64px;
             background-color: $primary-color;
             border: 0;
-            border-radius: 0 8px 8px 0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
 
             &:hover {
                 background-color: #fdb21d;
                 cursor: pointer;
+            }
+
+            span {
+                width: 64px;
+                height: 64px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top-left-radius: 16px;
+                border-bottom-left-radius: 16px;
+                background-color: rgba(0, 0, 0, 0.08);
+
+                &::after {
+                    content: "";
+                    background: url(../assets/searchDark.svg) no-repeat;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            strong {
+                font-size: 18px;
+                color: $title-color;
+                margin: 0 auto;
             }
         }
     }

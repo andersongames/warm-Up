@@ -1,17 +1,37 @@
 <div id="modal" class="hide">
         <div class="content">
             <div class="header">
-                <h1>Pontos de Coleta</h1>
+                <h1>Pesquisar Pontos de Coleta</h1>
                 <a href="#">Fechar</a>
             </div><!--header-->
             
             <form action="/search-results">
                 <div class="search field">
-                    <input type="text" name="search" placeholder="Pesquise por cidade">
+
+                        <div class="field">
+                            <select name="uf" required>
+                                <option value="">Selecione o Estado</option>
+                            </select>
+
+                            <input type="hidden" name="state">
+                        </div><!--field-->
+            
+                        <div class="field">
+                            <select name="city" disabled required>
+                                <option value="">Selecione a Cidade</option>
+                            </select>
+                            <input type="hidden" name="search">
+                        </div><!--field-->
+
                     <button>
-                        <img src="/assets/search.svg" alt="Buscar">
+                        <span></span>
+                        <strong>Pesquisar</strong>
+                        <!--<img src="/assets/searchDark.svg" alt="Buscar">-->
                     </button>
                 </div><!--search field-->
             </form><!--search-form-->
         </div><!--content-->
 </div><!--#modal .hide-->
+
+<script src="scripts/ibge-api.js"></script>
+<script src="scripts/search.js"></script>
