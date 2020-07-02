@@ -1,6 +1,6 @@
-# Projeto warmUp
+# Projeto Warm Up
  
- Aplicação **warmUp**, desenvolvido com base na aplicação Ecoleta, para fixar o aprendizados da Next Level Week e explorar novas funcionalidades.
+ Aplicação **Warm Up**, desenvolvido com base na aplicação Ecoleta, para fixar o aprendizados da Next Level Week e explorar novas funcionalidades.
  
  ## A Aplicação
  
