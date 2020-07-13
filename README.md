@@ -9,7 +9,7 @@
 :sparkling_heart::sparkling_heart::sparkling_heart:
  
 ## Screenshot
- ![Home](public/images/screenshot-warmUp-home.png)
+ ![Home](public/assets/images/screenshot-warmUp-home.png)
  
 ## :computer: Tecnologias
 - HTML
