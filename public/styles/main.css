@@ -123,6 +123,10 @@ header div.log-in a {
           align-items: center;
 }
 
+#page-home main.home div.responsive {
+  display: none;
+}
+
 #page-home main.home #slider {
   width: 90%;
   max-width: 1000px;
@@ -512,6 +516,7 @@ header div.log-in a {
   height: 80px;
   font-weight: bold;
   font-size: 18px;
+  padding: 2%;
   color: white;
   border: 0;
   border-radius: 16px;
@@ -522,7 +527,21 @@ header div.log-in a {
   background-color: #c02525;
 }
 
-span.backgroung-cover {
+#search-results {
+  width: 90%;
+  height: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#search-results span.backgroung-cover {
   background-color: white;
   position: absolute;
   top: 0;
@@ -533,7 +552,7 @@ span.backgroung-cover {
   z-index: -1;
 }
 
-main.search-results {
+#search-results main.search-results {
   max-width: 1000px;
   margin: 0 auto;
   margin-top: 48px;
@@ -550,12 +569,12 @@ main.search-results {
           align-items: center;
 }
 
-main.search-results h4 {
+#search-results main.search-results h4 {
   font-size: 18px;
   font-weight: normal;
 }
 
-main.search-results div.cards {
+#search-results main.search-results div.cards {
   margin-top: 48px;
   display: -ms-grid;
   display: grid;
@@ -565,13 +584,13 @@ main.search-results div.cards {
   padding: 0 1% 0 1%;
 }
 
-main.search-results div.cards div.card {
+#search-results main.search-results div.cards div.card {
   text-align: center;
   background-color: #EAE2B7;
   border-radius: 15px;
 }
 
-main.search-results div.cards div.card img {
+#search-results main.search-results div.cards div.card img {
   width: 100%;
   height: 150px;
   border-top-left-radius: 15px;
@@ -580,20 +599,124 @@ main.search-results div.cards div.card img {
      object-fit: cover;
 }
 
-main.search-results div.cards div.card h1 {
+#search-results main.search-results div.cards div.card h1 {
   margin-top: 4px;
   font-size: 24px;
   padding: 8px;
 }
 
-main.search-results div.cards div.card h3 {
+#search-results main.search-results div.cards div.card h3 {
   margin-top: 18px;
   color: #D62828;
   padding: 12px;
 }
 
-main.search-results div.cards div.card p {
+#search-results main.search-results div.cards div.card p {
   text-align: left;
   padding: 16px;
+}
+
+@media (max-width: 720px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header div.log-in {
+    margin-top: 40px;
+  }
+  header div.log-in a {
+    font-size: 14px;
+  }
+  #page-home {
+    margin-top: 20px;
+  }
+  #page-home div.text h1 {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  #page-home main.home div.responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #page-home main.home div.responsive img {
+    width: 60%;
+    height: 30%;
+    margin: 20px;
+  }
+  #page-home main.home #slider {
+    display: none;
+  }
+  #page-home main.home div.button a {
+    width: 280px;
+  }
+  #page-home main.home div.button a strong {
+    font-size: 14px;
+  }
+  #modal div.content {
+    width: 80%;
+  }
+  #modal div.content div.header h1 {
+    font-size: 22px;
+  }
+  #modal div.content form div.search button {
+    width: 90%;
+  }
+  #create-point form {
+    width: 95%;
+  }
+  #create-point form h1 {
+    font-size: 22px;
+  }
+  #create-point form fieldset legend {
+    font-size: 18px;
+  }
+  #create-point form fieldset div.field-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #create-point form fieldset div.field-group .field + .field {
+    margin-left: 0;
+  }
+  #create-point form fieldset div.field label {
+    font-size: 16px;
+  }
+  #create-point form fieldset div.field input, #create-point form fieldset div.field select {
+    font-size: 16px;
+  }
+  #create-point form fieldset div.items-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #create-point form fieldset div.items-grid li {
+    height: 100%;
+  }
+  #create-point form div.button button {
+    font-size: 16px;
+  }
+  #search-results span.backgroung-cover {
+    margin-top: 386px;
+  }
+  #search-results main.search-results div.cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 360px) {
+  #modal div.content div.header h1 {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

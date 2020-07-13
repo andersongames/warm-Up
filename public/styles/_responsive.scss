@@ -1,0 +1,129 @@
+@media (max-width: 720px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+
+        div.log-in {
+            margin-top: 40px;
+
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+
+    #page-home {
+        margin-top: 20px;
+
+        div.text h1 {
+            margin-top: 20px;
+            font-size: 20px;
+            text-align: center;
+            
+        }
+
+        main.home {
+            div.responsive {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 60%;
+                    height: 30%;
+                    margin: 20px;
+                }
+            }
+
+            #slider {
+                display: none;
+            }
+
+            div.button {
+                a {
+                    width: 280px;
+
+                    strong {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    #modal div.content {
+        width: 80%;
+
+        div.header h1 {
+            font-size: 22px;
+        }
+
+        form div.search {
+
+            button {
+                width: 90%;
+            }
+        }
+    }
+
+    #create-point {
+        form {
+            width: 95%;
+
+            h1 {
+                font-size: 22px;
+            }
+
+            fieldset {
+                legend {
+                    font-size: 18px
+                }
+
+                div.field-group {
+                    flex-direction: column;
+
+                    .field + .field {
+                        margin-left: 0;
+                    }
+                }
+
+                div.field {
+                    label {
+                        font-size: 16px;
+                    }
+
+                    input, select {
+                        font-size: 16px;
+                    }
+                }
+
+                div.items-grid {
+                    grid-template-columns: 1fr;
+
+                    li {
+                        height: 100%;
+                    }
+                }
+            }
+
+            div.button button {
+                font-size: 16px;
+            }
+        }
+    }
+
+    #search-results {
+        span.backgroung-cover {
+            margin-top: 386px;
+        }
+
+        main.search-results div.cards {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    #modal div.content div.header h1{
+        font-size: 16px;
+    }
+}
